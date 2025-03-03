@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.musicInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.albumCover {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+}
+
+.songTitle {
+  font-size: 0.9rem;
+  color: white;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  width: 6rem;
+}
+
+.songTitle:hover,
+.artistName:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.artistName {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7.5rem;
+}
+
+.playerControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.playPauseButton {
+  background-color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.playPauseButton:hover {
+  transform: scale(1.04);
+}
+
+.otherControls {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.icon {
+  color: #b8b8b8;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: white;
+}

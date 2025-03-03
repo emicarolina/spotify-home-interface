@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 34.375rem;
+}
+
+.time {
+  font-size: 0.75rem;
+  font-family: "Inter", Arial, sans-serif;
+  color: #b3b3b3;
+}
+
+.progressBarWrapper {
+  position: relative;
+  width: 100%;
+  height: 0.3125rem;
+}
+
+.progressBackground {
+  width: 100%;
+  height: 0.3125rem;
+  background: #535353;
+  border-radius: 0.3125rem;
+  position: absolute;
+}
+
+.progressFill {
+  height: 0.3125rem;
+  background: white;
+  border-radius: 0.3125rem;
+  position: absolute;
+}
+
+.progressFill.dragging,
+.progressBarWrapper:hover .progressFill {
+  background: #1db954 !important;
+}
+
+.progressBar {
+  width: 100%;
+  height: 0.3125rem;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.progressBar::-webkit-slider-runnable-track {
+  height: 0.3125rem;
+  background: transparent;
+  border-radius: 0.3125rem;
+}
+
+.progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: transparent;
+  border-radius: 50%;
+  margin-top: -0.25rem;
+  position: relative;
+  z-index: 3;
+}
+
+.progressThumb {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  cursor: pointer;
+  pointer-events: auto;
+}

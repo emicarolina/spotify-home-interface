@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.nav {
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.icon {
+  color: #b8b8b8;
+  align-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.iconInative {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.initial {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: center;
+  padding-left: 3.5rem;
+}
+
+.profileSide {
+  display: flex;
+  gap: 1rem;
+  color: #b8b8b8;
+  align-items: center;
+}
+
+.profileImage {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+}
+
+.iconBackground {
+  background-color: #1f1f1f;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+
+.inputContainer {
+  background-color: #1f1f1f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 31.25rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 25.75rem;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.inputContainer:hover {
+  background-color: rgba(85, 85, 85, 0.512);
+  outline: 0.0625rem solid rgb(90, 90, 90);
+}
+
+.inputContainer:hover .icon {
+  color: white;
+}
+
+.inputContainer:focus-within {
+  outline: 0.125rem solid white;
+  transition: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.625rem;
+  color: #b8b8b8;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  padding-left: 2rem;
+  color: white;
+  outline: none;
+  font-size: 0.875rem;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.divider {
+  width: 0.0625rem;
+  height: 1.875rem;
+  background-color: #b8b8b8;
+  margin: 0 0.9375rem;
+}
+
+.folder {
+  color: #b8b8b8;
+  cursor: pointer;
+  width: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.iconHover:hover {
+  color: white;
+  transform: scale(1.1);
+}

@@ -1,0 +1,63 @@
+.volumeControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 6.25rem;
+}
+
+.volumeBarContainer {
+  position: relative;
+  width: 100%;
+  height: 0.25rem;
+  background: #535353;
+  border-radius: 0.125rem;
+  cursor: pointer;
+}
+
+.volumeFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.volumeBarContainer:hover .volumeFill {
+  background: #1db954 !important;
+}
+
+.volumeBar {
+  width: 100%;
+  height: 0.25rem;
+  background: transparent;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.volumeBar::-webkit-slider-runnable-track {
+  height: 0.25rem;
+  background: transparent;
+  border-radius: 0.125rem;
+}
+
+.volumeBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: white;
+  border-radius: 50%;
+  margin-top: -0.25rem;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+
+.volumeBarContainer:hover .volumeBar::-webkit-slider-thumb {
+  opacity: 1;
+}
