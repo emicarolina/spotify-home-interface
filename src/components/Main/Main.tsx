@@ -49,7 +49,7 @@ const Main = () => {
     {
       src: mix4,
       alt: "Playboi Carti",
-      description: "This is Playboi Carti. Todos os maiores hits em uma ... ",
+      description: "This is Playboi Carti. Todos os maiores hits em uma... ",
     },
     {
       src: mix5,
