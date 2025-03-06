@@ -18,3 +18,8 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+@media (max-width: 480px) {
+  body {
+    background: #121212;
+  }
+}

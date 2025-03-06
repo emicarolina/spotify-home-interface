@@ -1,0 +1,37 @@
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #000000f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #282828;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  flex: 1;
+}
+.navItem:nth-child(1) {
+  color: white;
+}
+.navItem:nth-child(2) {
+  margin-left: -0.3rem;
+}
+
+.navItem span {
+  font-size: 0.7rem;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+}

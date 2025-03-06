@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ProgressBar } from "./ProgressBar/ProgressBar";
 import { VolumeBar } from "./VolumeBar/VolumeBar";
 import { blackice } from "../../assets/images";
+import useMobileDetect from "../../hooks/useMobileDetect";
+import MobilePlayer from "../Player/MobilePlayer";
 
 import {
   CirclePlus,
@@ -24,6 +26,11 @@ const Footer = () => {
   const [currentTime, setCurrentTime] = useState(56);
   const duration = 246;
   const [volume, setVolume] = useState(1);
+  const isMobile = useMobileDetect();
+
+  if (isMobile) {
+    return <MobilePlayer />;
+  }
 
   return (
     <div className={styles.footerContainer}>

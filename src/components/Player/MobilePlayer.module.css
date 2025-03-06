@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.mobilePlayer {
+  position: fixed;
+  bottom: 3.52rem;
+  left: 0;
+  right: 0;
+  background: rgb(93, 14, 14);
+  padding: 1rem 0.8rem;
+  padding-top: 0.7rem;
+  border-radius: 0.7rem;
+  margin: 0 0.5rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  height: 4rem;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.songInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.albumCover {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.titleWrapper h3 {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+}
+
+.titleWrapper p {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.deviceInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #1db954;
+  font-size: 0.7rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.progressBar {
+  width: 100%;
+  position: relative;
+  height: 3px;
+  background: #535353;
+  border-radius: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  top: -0.2rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+.laptop {
+  color: #1db954;
+}

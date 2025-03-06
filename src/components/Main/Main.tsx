@@ -1,11 +1,13 @@
 import styles from "./Main.module.css";
-import { Play } from "lucide-react";
+import { Play, EllipsisVertical } from "lucide-react";
 import {
   alive2007,
   blackice,
+  goldcobra,
   limpbizkit,
   metallica,
   daftpunk,
+  hup,
   livelove,
   yeezus,
   slipknot,
@@ -16,6 +18,8 @@ import {
   mix5,
   mix6,
   mix7,
+  pfp,
+  sss4u,
 } from "../../assets/images";
 
 const Main = () => {
@@ -70,6 +74,10 @@ const Main = () => {
 
   return (
     <div className={styles.main}>
+      <div className={styles.pfpContainer}>
+        <img className={styles.profileImage} src={pfp} alt="Profile" />
+      </div>
+
       <div className={styles.options}>
         <div className={styles.tudo}>Tudo</div>
         <div className={styles.musica}>Música</div>
@@ -86,6 +94,36 @@ const Main = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className={styles.mostListened}>
+        <h1>Não sai do seu fone</h1>
+        <div className={styles.musics}>
+          <div className={styles.music}>
+            <img src={goldcobra} alt="" />
+            <div className={styles.textsMusic}>
+              <h2>Bring It Back</h2>
+              <p>Limp Bizkit</p>
+            </div>
+            <EllipsisVertical className={styles.icon} />
+          </div>
+          <div className={styles.music}>
+            <img src={sss4u} alt="" />
+            <div className={styles.textsMusic}>
+              <h2>SOMETHING ABOUT YOU</h2>
+              <p>PARTYNEXTDOOR e Drake</p>
+            </div>
+            <EllipsisVertical className={styles.icon} />
+          </div>
+          <div className={styles.music}>
+            <img src={hup} alt="" />
+            <div className={styles.textsMusic}>
+              <h2>Big Sleep (feat.Giorgio Moroder)</h2>
+              <p>The Weeknd e Giorgio Moroder</p>
+            </div>
+            <EllipsisVertical className={styles.icon} />
+          </div>
+        </div>
       </div>
 
       <div className={styles.madeForYou}>

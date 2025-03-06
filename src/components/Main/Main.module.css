@@ -8,6 +8,12 @@
   top: 4.25rem;
   left: 5.9375rem;
 }
+.profileImage {
+  display: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+}
 
 .options {
   position: absolute;
@@ -48,8 +54,8 @@
   grid-template-rows: repeat(2, auto);
   gap: 0.7rem;
   position: absolute;
-  top: 4rem;
-  left: 2rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
 }
 
 .latest {
@@ -202,4 +208,149 @@
 
 .playButton2:hover {
   transform: translate(-50%, -50%) scale(1.05);
+}
+.mostListened {
+  display: none;
+}
+@media (max-width: 480px) {
+  .main {
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+  .options {
+    padding-top: 1rem;
+    padding-left: 4rem;
+  }
+  .tudo {
+    background-color: #1ed760;
+  }
+  .pfpContainer {
+    width: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  .profileImage {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    display: block;
+  }
+  .latestContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .latest {
+    width: auto;
+    height: 3.5rem;
+    gap: 0;
+  }
+  .latest:hover {
+    background-color: #323232ab;
+  }
+
+  .playButton,
+  .playButton2 {
+    display: none;
+  }
+  .latest,
+  .mixCard {
+    transition: none;
+  }
+  .mixCard:hover {
+    background: transparent;
+  }
+  .latest img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .latest span {
+    font-size: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .madeForYouContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    scroll-padding-left: 0.5rem;
+  }
+  .madeForYouContainer::-webkit-scrollbar {
+    display: none;
+  }
+  .mixCard {
+    scroll-snap-align: start;
+    width: 10rem;
+    padding: 0.5rem;
+  }
+
+  .mixCard p {
+    padding-top: 0.3rem;
+    width: 100%;
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .mixImage {
+    border-radius: 0.8rem;
+  }
+  .madeForYou {
+    margin-top: 1rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
+    padding-bottom: 8rem;
+  }
+
+  .texts p {
+    display: none;
+  }
+  .mostListened {
+    display: block;
+    color: white;
+    font-family: "Inter", Arial, sans-serif;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+  .mostListened h1 {
+    font-size: 1.2rem;
+  }
+  .musics {
+    padding-top: 1rem;
+  }
+  .music {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 0.6rem;
+  }
+  .music img {
+    width: 3rem;
+    border-radius: 15%;
+  }
+  .music h2 {
+    font-size: 0.9rem;
+  }
+  .music p {
+    font-size: 0.7rem;
+  }
+  .textsMusic {
+    flex-grow: 1;
+    padding-left: 0.7rem;
+  }
+  .icon {
+    margin-left: auto;
+    padding-right: 1rem;
+    color: #b3b3b3;
+    width: 2.3rem;
+  }
 }
